@@ -28,7 +28,7 @@ function fetchUserProfile(accessToken, context, callback) {
       // TODO: Update this to map the incoming user identity to the Auth0 profile:
       // https://auth0.com/docs/users/user-profile-structure
       bodyParsed.user_id = bodyParsed.sub;
-      bodyParsed.name =  bodyParsed.given_name + ' ' + bodyParsed.family_name;
+      bodyParsed.name = (bodyParsed.given_name && bodyParsed.family_name) ? (bodyParsed.given_name + ' ' + bodyParsed.family_name) : null;
       
       return callback(null, bodyParsed);
     });
