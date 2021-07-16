@@ -11,7 +11,7 @@ To configure the integration with netID, follow the steps below.
 
 1. Login into the netID Developer Portal with your account
 2. Create a `service` for which you want to enable the netID Single Sign-On by navigating to `Services` and then selecting `Add service`. Detailed documentation can be found [here](https://developerzone.netid.dev/devportal/tutorial/services/)
-3. Create a `client` for this service by selecting on `Add client`. Detailed documentation can be found [here](https://developerzone.netid.dev/devportal/tutorial/clients/#creating-a-client) - it's critical to set the proper Auth0 callback url for your tenant. The Auth0 Callback URL is `https://YOUR_DOMAIN/login/callback` where `<YOUR_DOMAIN>` needs to be replaced with yours.
+3. Create a `client` for this service by selecting on `Add client`. Detailed documentation can be found [here](https://developerzone.netid.dev/devportal/tutorial/clients/#creating-a-client). **It's critical** to configure the proper `callback url` for your tenant. Your Auth0 Callback URL is ... `<PLEASE ADD>`
 4. Once the client is created it will initially run in a sandboxed mode, which means it can only be used with  netID-Accounts on the configured allow list. In order to successfully run through the initial integration add a
 test user (e-mail address) to the allow list by selecting `Add test user`
 
